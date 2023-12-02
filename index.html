@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List To Do App</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="listToDo.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Todo List Application</h2>
+    <div class="input-group mb-3 box">
+        <label style="width: 90%"><input class="form-control" id="todoInput" placeholder="Add new todo" type="text"></label>
+        <div class="input-group-append">
+            <button class="btn btn-primary" onclick="addTodo(document.getElementById('todoInput').value)">Add Todo</button>
+        </div>
+    </div>
+    <button class="btn btn-danger mt-3 mb-2" onclick="deleteAll()">Delete All Todo</button>
+    <div class="list-group" id="todoList"></div>
+</div>
+</body>
+<script src="listToDo.js"></script>
+</html>
